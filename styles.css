@@ -1,0 +1,106 @@
+ * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+header {
+  background-color: hsl(210, 46%, 95%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 40rem;
+  height: 15rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.drawers {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+}
+
+.heading {
+  color: hsl(217, 19%, 35%);
+  margin: 25px 25px 0 30px;
+}
+
+.paragraph {
+  color: hsl(214, 17%, 51%);
+  font-size: 12px;
+  margin: 10px 31px 0 30px;
+}
+
+.about {
+  display: flex;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 15px 0 0 25px;
+}
+
+.name {
+  color: hsl(217, 19%, 35%);
+  font-size: 12px;
+  margin: 18px 0 0 15px;
+}
+
+.name span {
+  color: hsl(212, 23%, 69%);
+  font-size: 10px;
+}
+
+.share {
+  background-color: hsl(210, 46%, 95%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin: 20px 0 0 140px;
+  z-index: 1;
+}
+
+.fa-share {
+  color: hsl(217, 19%, 35%);
+  font-size: 15px;
+}
+
+@media screen and (max-width: 650px) {
+  .card {
+    width: 20rem;
+    height: 35rem;
+    display: block;
+  }
+
+  .drawers {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    width: 20rem;
+    height: 15rem;
+  }
+
+  .paragraph {
+    margin-right: 3.9rem;
+  }
+  .about {
+    margin-top: 18px;
+  }
+  .share {
+    margin: 20px 0 0 70px;
+  }
+}
